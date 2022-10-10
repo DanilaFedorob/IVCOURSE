@@ -15,7 +15,7 @@ export default function Header() {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            ABOBA
           </Typography>
         </Toolbar>
       </AppBar>
