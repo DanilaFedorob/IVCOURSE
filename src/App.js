@@ -1,12 +1,5 @@
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-
+import DashboardLayout from "./components/DashboardLayout/DashboardLayout";
 export function App() {
   
-  return <div style={{
-    display: "flex",
-    flexDirection: 'column',
-    justifyContent: "center",
-    height: '100vh'
-  }}><Header/> <Footer /> </div>;
+  return <DashboardLayout>рнкаепшрш </DashboardLayout>;
 }

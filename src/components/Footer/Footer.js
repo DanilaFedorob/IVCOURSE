@@ -1,11 +1,12 @@
-import { fontWeight, height, margin, width } from "@mui/system";
-
 export default function Footer() {
   return (
     <div style={{
-      color: "Grey",
-      width: "0vh",
-      margin: "0 auto"
+      color: "white",
+      width: "100vw",
+      textAlign: "center",
+      margin: "0 auto",
+      fontSize: "3vh",
+      backgroundColor: "#cfcfcf"
     }}>footer</div>
   );
 }
