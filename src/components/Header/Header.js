@@ -5,6 +5,10 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
 
+
+function handleClick() {
+  window.location.pathname = "/auth";
+}
 export default function Header() {
   return (
     <Box >
@@ -17,10 +21,15 @@ export default function Header() {
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
             ABOBA
-            <Button> </Button>
           </Typography>
+          <Button variant='contained' onClick={handleClick}> Войти </Button>
         </Toolbar>
       </AppBar>
     </Box>
+  );
+}
+if (window.location.pathname === "/auth") {
+  return (
+    <Button variant='contained' onClick={handleClick}> Войти </Button>
   );
 }
