@@ -1,6 +1,6 @@
 import DashboardLayout from "./components/DashboardLayout/DashboardLayout";
 import { AuthForm } from "./containers/AuthForm/AuthForm";
-
+import { Header } from "./components/Header/Header";
 export function App() {
 
   console.log(window.location)
@@ -12,7 +12,7 @@ export function App() {
       </DashboardLayout>
     );
   }
-
+  
   return (
     <DashboardLayout>
       Главная
@@ -20,3 +20,5 @@ export function App() {
   );
 
 }
+
+

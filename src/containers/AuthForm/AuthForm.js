@@ -16,9 +16,10 @@ export function AuthForm() {
   }}>
     <TextField id="outlined-basic" label="Login" variant="outlined" />
     <TextField id="filled-basic" label="Password" variant="filled" type="password" />
-    <Button> Login </Button>;
+    <Button> Login </Button>
 
   </div>
 
 }
+
 

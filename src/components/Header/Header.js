@@ -4,11 +4,15 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
-
-
+import DashboardLayout from '../DashboardLayout/DashboardLayout';
 function handleClick() {
   window.location.pathname = "/auth";
 }
+
+function handleClickHome() {
+  window.location.pathname = "/";
+}
+
 export default function Header() {
   return (
     <Box >
@@ -20,7 +24,7 @@ export default function Header() {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            ABOBA
+            <Button variant = "contained" onClick={handleClickHome}> ABOBA </Button>  
           </Typography>
           <Button variant='contained' onClick={handleClick}> Войти </Button>
         </Toolbar>
@@ -28,8 +32,4 @@ export default function Header() {
     </Box>
   );
 }
-if (window.location.pathname === "/auth") {
-  return (
-    <Button variant='contained' onClick={handleClick}> Войти </Button>
-  );
-}
+
