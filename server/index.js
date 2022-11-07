@@ -8,4 +8,3 @@ console.log('Сервер запущен. Порт сервера: ${port}');
 app.get("/", (reaq, res) => {
     res.send("HELLO LORD!");
 });
-// asdsdasdasdas    sdasdsadsads
